@@ -42,15 +42,15 @@ Connected directly to the BigQuery views. Dashboard includes:
 
 CHF and EUR remained relatively stable against PLN throughout 2025, while USD, JPY, and KRW depreciated by roughly 12-13% - consistent with broader USD weakness observed globally that year.
 
-## Tech Stack
+## Used Technology
 
 Python (pandas, requests) - Google BigQuery - SQL (window functions) - Power BI
 
 ## Repository Structure
 
 ```
-├── scripts/         # Python data extraction script
-├── sql/             # SQL view definitions
+├── scripts/          # Python data extraction script + csv result file
+├── sql/              # SQL view definitions
 ├── dashboard/        # Power BI (.pbix) file
 ├── screenshots/      # Pipeline and dashboard screenshots
 └── README.md
