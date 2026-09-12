@@ -2,11 +2,11 @@
 
 End-to-end data pipeline analyzing PLN exchange rates against five currencies (USD, EUR, CHF, JPY, KRW), from raw API data to an interactive Power BI dashboard.
 
-## Data Source
+### Data Source
 
 [National Bank of Poland (NBP) API](https://api.nbp.pl) - public, no authentication required. Table A exchange rates, daily frequency, Jan 2025 - Jan 2026.
 
-## Pipeline
+### Pipeline
 
 **1. Data extraction (Python, Google Colab)**
 Fetched daily rates per currency via `requests`, combined into a single tidy dataframe with `pandas`, exported as CSV.
@@ -38,15 +38,15 @@ Connected directly to the BigQuery views. Dashboard includes:
 
 ![Final dashboard](screenshots/04_dashboard_overview.png)
 
-## Key Insight
+### Key Insight
 
 CHF and EUR remained relatively stable against PLN throughout 2025, while USD, JPY, and KRW depreciated by roughly 12-13% - consistent with broader USD weakness observed globally that year.
 
-## Used Technology
+### Used Technology
 
 Python (pandas, requests) - Google BigQuery - SQL (window functions) - Power BI
 
-## Repository Structure
+### Repository Structure
 
 ```
 ├── scripts/          # Python data extraction script + csv result file
